@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentacion.control.ControladorListarReservasSucursal">
+   <children>
+      <VBox prefHeight="317.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="listaSucursales" prefWidth="150.0" />
+            <TableView fx:id="reservas">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="90.0" text="DNI cliente" />
+                <TableColumn fx:id="col2" prefWidth="135.0" text="Fecha de recogida" />
+                  <TableColumn fx:id="col3" minWidth="0.0" prefWidth="179.0" text="Fecha de devolución" />
+                  <TableColumn fx:id="col4" maxWidth="1.7976931348623157E308" prefWidth="195.0" text="Lugar de devolución" />
+              </columns>
+            </TableView>
+            <Button fx:id="cerrar" mnemonicParsing="false" text="Cerrar" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
